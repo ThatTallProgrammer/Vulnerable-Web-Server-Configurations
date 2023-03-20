@@ -1,0 +1,1 @@
+File inclusion occurs when an application allows for the inclusion of a local file. This occurs when unvalidated user input instructs the application to fetch a resource.
