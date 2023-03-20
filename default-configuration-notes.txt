@@ -1,0 +1,1 @@
+Changed "AllowOverride None" to "AllowOverride All" to allow for .htaccess files to be used

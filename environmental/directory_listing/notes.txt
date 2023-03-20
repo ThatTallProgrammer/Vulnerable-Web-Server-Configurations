@@ -7,3 +7,19 @@ Setup
   - Create a test directory in /var/www/html
   - Create multiple files and/or other directories in the test directory
   - Navigate to the test directory in a browser. The files will be listed.
+
+::: Remediation :::
+
+Configure the system to server indexing of directories\
+
+1. httpd.conf
+  - Find the line with "Options Indexes FollowSymLinks"
+  - Change to "Options FollowSymLinks"
+  - Restart the server
+  - Verify that browsing to the test directory gets a Forbidden status
+
+2. .htaccess
+  - Ensure that "AllowOverride All" is specified in the main configuration file
+  - Create a .htaccess file in the main html directory (/var/www/html)
+  - Place "Options -Indexes" in the file
+  - Restart the server
