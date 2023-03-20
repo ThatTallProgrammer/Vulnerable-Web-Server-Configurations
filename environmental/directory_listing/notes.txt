@@ -1,0 +1,9 @@
+Directory listing occurs when an attacher is able to send a specially crafted request that lists the directory structure of the web server
+
+::: Apache :::
+Occurs when no default file is specified for a directory
+
+Setup
+  - Create a test directory in /var/www/html
+  - Create multiple files and/or other directories in the test directory
+  - Navigate to the test directory in a browser. The files will be listed.
